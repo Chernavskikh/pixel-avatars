@@ -1,8 +1,9 @@
 {
   "private": true,
-  "homepage": "https://create-react-app-redux.now.sh",
+  "homepage": "https://chernavskikh.github.io/pixel-avatars/",
   "scripts": {
-    "deploy": "now && now alias",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "now-start": "serve -s ./build",
     "build": "react-scripts build",
@@ -16,6 +17,7 @@
   },
   "dependencies": {
     "connected-react-router": "4.5.0",
+    "gh-pages": "^2.0.1",
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "react-redux": "5.0.7",
