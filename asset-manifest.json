@@ -1,7 +1,7 @@
 {
   "main.css": "/pixel-avatars/static/css/main.050925fe.chunk.css",
-  "main.js": "/pixel-avatars/static/js/main.67730bcd.chunk.js",
-  "main.js.map": "/pixel-avatars/static/js/main.67730bcd.chunk.js.map",
+  "main.js": "/pixel-avatars/static/js/main.2dc2e1f0.chunk.js",
+  "main.js.map": "/pixel-avatars/static/js/main.2dc2e1f0.chunk.js.map",
   "static/css/1.a7a830e4.chunk.css": "/pixel-avatars/static/css/1.a7a830e4.chunk.css",
   "static/js/1.5b68679c.chunk.js": "/pixel-avatars/static/js/1.5b68679c.chunk.js",
   "static/js/1.5b68679c.chunk.js.map": "/pixel-avatars/static/js/1.5b68679c.chunk.js.map",
@@ -10,6 +10,6 @@
   "static/css/1.a7a830e4.chunk.css.map": "/pixel-avatars/static/css/1.a7a830e4.chunk.css.map",
   "static/css/main.050925fe.chunk.css.map": "/pixel-avatars/static/css/main.050925fe.chunk.css.map",
   "index.html": "/pixel-avatars/index.html",
-  "precache-manifest.1dd03707e409fb667912a79e7f358b15.js": "/pixel-avatars/precache-manifest.1dd03707e409fb667912a79e7f358b15.js",
+  "precache-manifest.d9a761b5fb94088f5a196f12821586ec.js": "/pixel-avatars/precache-manifest.d9a761b5fb94088f5a196f12821586ec.js",
   "service-worker.js": "/pixel-avatars/service-worker.js"
 }
