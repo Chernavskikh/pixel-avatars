@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "chernavskikh.github.io/pixel-avatars/precache-manifest.2e27048f2b420fc4c1efbb7beb1158ec.js"
+  "/pixel-avatars/precache-manifest.91b894826b8c1fcecf506e08b8ac2206.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("chernavskikh.github.io/pixel-avatars/index.html", {
+workbox.routing.registerNavigationRoute("/pixel-avatars/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
