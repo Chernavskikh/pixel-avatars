@@ -15,11 +15,15 @@ button:disabled {
   opacity: 0.5;
 }
 
+h1 {
+  margin: 0;
+}
+
 .avatar-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 30px auto 0;
   max-width: 600px;
 }
 
@@ -40,6 +44,7 @@ input {
   padding: 6px 10px;
   margin-top: 25px;
   cursor: pointer;
+  background: transparent;
 }
 
 .btn-delete {
@@ -64,9 +69,29 @@ input {
   flex-wrap: wrap;
 }
 
+.item {
+  width: 33.3%;
+  padding: 10px;
+}
+
 .favorite-item {
   position: relative;
   width: 20%;
   margin-top: 20px;
   padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .favorite-item {
+    width: 25%;
+  }
+
+  .favorites-container {
+    padding: 0 4vw;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 0 10px;
+  }
 }
