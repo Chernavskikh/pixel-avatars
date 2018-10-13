@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/pixel-avatars/static/css/1.a7a830e4.chunk.css"
   },
   {
-    "revision": "4cb87e10e1a1b7d1b7869b14ee85dbaa",
+    "revision": "6f60e11a9b6bd3e5037637cf741dbcda",
     "url": "/pixel-avatars/index.html"
   }
 ];
