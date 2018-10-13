@@ -1,0 +1,1 @@
+export const API = 'https://avatars.dicebear.com/v2/'

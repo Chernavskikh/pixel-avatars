@@ -1,58 +1,33 @@
 import React from 'react'
-import { push } from 'connected-react-router'
-import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import {
-  increment,
-  incrementAsync,
-  decrement,
-  decrementAsync
-} from '../../modules/counter'
+import { getAvatar } from '../../actions/avatars'
 
 const Home = props => (
-  <div>
-    <h1>Home</h1>
-    <p>Count: {props.count}</p>
+  <div className="wrapper">
+    <h1>Enter your own seed!</h1>
+      <div className="avatar-container">
+          <img style={{width: 150}} src={`https://avatars.dicebear.com/v2/male/${props.query}.svg"`} alt=""/>
+          <img style={{width: 150}} src={`https://avatars.dicebear.com/v2/female/${props.query}.svg"`} alt=""/>
+          <img style={{width: 150}} src={`https://avatars.dicebear.com/v2/identicon/${props.query}.svg"`} alt=""/>
+      </div>
 
-    <p>
-      <button onClick={props.increment}>Increment</button>
-      <button onClick={props.incrementAsync} disabled={props.isIncrementing}>
-        Increment Async
-      </button>
-    </p>
-
-    <p>
-      <button onClick={props.decrement}>Decrement</button>
-      <button onClick={props.decrementAsync} disabled={props.isDecrementing}>
-        Decrement Async
-      </button>
-    </p>
-
-    <p>
-      <button onClick={() => props.changePage()}>
-        Go to about page via redux
-      </button>
-    </p>
+      <input type="text" onChange={(event) => props.getAvatars(event.target.value)} />
   </div>
 )
 
-const mapStateToProps = ({ counter }) => ({
-  count: counter.count,
-  isIncrementing: counter.isIncrementing,
-  isDecrementing: counter.isDecrementing
-})
+const mapStateToProps = state => {
+    return {
+        query: state.avatars.avatarQuery,
+    }
+}
 
-const mapDispatchToProps = dispatch =>
-  bindActionCreators(
-    {
-      increment,
-      incrementAsync,
-      decrement,
-      decrementAsync,
-      changePage: () => push('/about-us')
-    },
-    dispatch
-  )
+const mapDispatchToProps = dispatch => {
+    return {
+        getAvatars: query => {
+            dispatch(getAvatar(query));
+        }
+    };
+};
 
 export default connect(
   mapStateToProps,

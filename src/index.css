@@ -14,3 +14,22 @@ body {
 button:disabled {
   opacity: 0.5;
 }
+
+.avatar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 5px;
+  margin-top: 20px;
+}
