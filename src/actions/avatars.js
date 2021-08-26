@@ -18,7 +18,7 @@ export const saveAvatar = (query, type) => {
         payload: {
             query,
             type,
-            // generate unic id
+            // generate unique id
             id: Date.now(),
         }
     }

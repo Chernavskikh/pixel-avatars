@@ -1,1 +1,1 @@
-export const API = 'https://avatars.dicebear.com/v2/'
+export const API_URL = 'https://avatars.dicebear.com/api'
