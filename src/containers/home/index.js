@@ -6,7 +6,7 @@ import Search from '../../components/search'
 
 const Home = props => (
         <div className="wrapper">
-            <Search query={props.query} saveAvatar={props.saveAvatar} />
+            <Search query={props.query} saveAvatar={props.saveAvatar} getAvatars={props.getAvatars} />
             { props.favoritesArr.length > 0 && <Favorites avatars={props.favoritesArr} deleteAvatar={props.deleteAvatar} />}
         </div>
 )

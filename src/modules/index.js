@@ -1,7 +1,10 @@
 import { combineReducers } from 'redux'
-// import counter from './counter'
+import { connectRouter } from 'connected-react-router'
 import avatars from './avatars'
 
-export default combineReducers({
-  avatars
+const createRootReducer = (history) => combineReducers({
+  router: connectRouter(history),
+  // rest of your reducers
+  avatars,
 })
+export default createRootReducer
