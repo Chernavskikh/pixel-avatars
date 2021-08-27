@@ -1,6 +1,6 @@
 {
   "private": true,
-  "homepage": ".",
+  "homepage": "https://chernavskikh.github.io/pixel-avatars/",
   "scripts": {
     "predeploy": "yarn run build",
     "start": "react-scripts start",
