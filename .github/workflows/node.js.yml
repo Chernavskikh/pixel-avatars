@@ -26,10 +26,14 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install packages
-        run: yarn install --frozen-lockfile
+        run: |
+          yarn install
+          yarn build
+          
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
 
-      - name: Test
-        run: yarn test
 
-        env:
-          CI: true
