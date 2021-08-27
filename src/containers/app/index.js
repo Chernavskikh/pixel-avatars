@@ -1,13 +1,13 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
+import { Route, HashRouter  } from 'react-router-dom'
 import Home from '../home'
 
 const App = () => (
-  <div>
+  <HashRouter basename='/'>
     <main>
       <Route exact path="/" component={Home} />
     </main>
-  </div>
+  </HashRouter>
 )
 
 export default App
