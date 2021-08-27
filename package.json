@@ -4,7 +4,7 @@
   "scripts": {
     "predeploy": "yarn run build",
     "start": "react-scripts start",
-    "now-start": "serve -s ./build",
+    "now-start": "serve -s ./build -l 3000",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
