@@ -13,3 +13,9 @@ yarn
 ## Get started
 
 yarn start
+
+## Build
+yarn build
+
+## APP DEMO
+https://chernavskikh.github.io/pixel-avatars/
