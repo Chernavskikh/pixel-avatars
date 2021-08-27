@@ -1,9 +1,8 @@
 {
   "private": true,
-  "homepage": "https://chernavskikh.github.io/pixel-avatars/",
+  "homepage": ".",
   "scripts": {
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "now-start": "serve -s ./build",
     "build": "react-scripts build",
@@ -17,7 +16,6 @@
   },
   "dependencies": {
     "connected-react-router": "6.9.1",
-    "gh-pages": "^3.2.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-redux": "7.2.4",
