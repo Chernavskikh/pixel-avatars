@@ -3,6 +3,9 @@
 
 React pixel avatars generator
 
+## APP DEMO
+https://chernavskikh.github.io/pixel-avatars/
+
 Used boilerplate https://github.com/notrab/create-react-app-redux.git
 
 ## Installation
@@ -16,6 +19,3 @@ yarn start
 
 ## Build
 yarn build
-
-## APP DEMO
-https://chernavskikh.github.io/pixel-avatars/
